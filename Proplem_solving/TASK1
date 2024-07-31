@@ -6,3 +6,16 @@ for i in range(0,n):
     if x.count('1')>=2:
         count=count+1
 print(count)
+
+
+
+
+
+
+
+#265A
+c1,c2,c3,c4=map(int,input().split())
+unique_number={c1,c2,c3,c4}
+number_unique=len(unique_number)
+horse_needed=4-number_unique
+print(horse_needed)

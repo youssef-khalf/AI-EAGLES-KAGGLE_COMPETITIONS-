@@ -6,16 +6,32 @@ for i in range(0,n):
     if x.count('1')>=2:
         count=count+1
 print(count)
-
-
-
-
-
-
-
 #265A
-c1,c2,c3,c4=map(int,input().split())
-unique_number={c1,c2,c3,c4}
-number_unique=len(unique_number)
-horse_needed=4-number_unique
-print(horse_needed)
+C=input()
+T=input()
+position= 0
+for i in range( len(T) ):
+    if T[i]==C[position]:
+        position +=1
+print(position +1 )
+# 160A
+NO_Coins=int(input())
+values=list(map(int,input().split()))
+half=sum(values)/2
+coins=0
+Qnt=0
+for i,v in enumerate(reversed(sorted(values))):
+        Qnt+=v
+        coins+=1
+        if Qnt>half:
+                break
+print(coins)
+# 102B
+n=list(map(int,input().split()))
+m= 0
+for i in range(0, len(n) ):
+    if n[i] > 0:
+        m +=1
+print(m)
+
+
